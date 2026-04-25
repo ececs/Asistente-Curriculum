@@ -14,6 +14,7 @@ client_gemini = OpenAI(
 # Configuración de Modelos
 MODEL_CHAT = "gpt-4o-mini"
 MODEL_EVAL = "gemini-2.5-flash-lite"
+MODEL_EMBEDDING = "text-embedding-3-small"
 
 # Datos Personales
 NOMBRE_USUARIO = "Eudaldo Alvaro Cal Saul"
