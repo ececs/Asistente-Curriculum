@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Eudaldo Cal Saul - Full Stack & IA Automation Architect</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --bg-sidebar: #f8fafc;
+            --text-main: #1e293b;
+            --text-light: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--text-main);
+            line-height: 1.5;
+            background: #f1f5f9;
+            padding: 20px;
+        }
+
+        .cv-container {
+            width: 210mm;
+            min-height: 297mm;
+            background: white;
+            margin: 0 auto;
+            display: flex;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 28%;
+            background: var(--bg-sidebar);
+            padding: 30px 20px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .sidebar-section {
+            margin-bottom: 18px;
+        }
+
+        .sidebar-title {
+            color: var(--primary);
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+
+        .contact-item {
+            font-size: 0.75rem;
+            margin-bottom: 6px;
+            color: var(--text-main);
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: white;
+            border: 1px solid #cbd5e1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            margin: 1px;
+            font-weight: 500;
+        }
+
+        .lang-item {
+            font-size: 0.75rem;
+            margin-bottom: 3px;
+        }
+
+        /* Main */
+        .main {
+            flex: 1;
+            padding: 30px 35px;
+        }
+
+        header {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+            margin-bottom: 2px;
+        }
+
+        .header-subtitle {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .profile-summary {
+            background: #eff6ff;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+            font-size: 0.75rem;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 4px;
+        }
+
+        .job {
+            margin-bottom: 10px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--primary);
+        }
+
+        .job-company {
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 0.8rem;
+        }
+
+        .job-date {
+            font-size: 0.7rem;
+            color: var(--text-light);
+        }
+
+        .job-list {
+            font-size: 0.75rem;
+            color: var(--text-main);
+            padding-left: 14px;
+            margin-top: 1px;
+        }
+
+        .job-list li {
+            margin-bottom: 1px;
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                border-radius: 0;
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Contacto</h3>
+                <div class="contact-item">📍 Tenerife, España</div>
+                <div class="contact-item">📧 eudaldocal@gmail.com</div>
+                <div class="contact-item">📞 +34 666 750 753</div>
+                <div class="contact-item">🔗 linkedin.com/in/eudaldo-alvaro-c-b37aa731</div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Tecnologías IA & Web</h3>
+                <div class="skill-tag">n8n Expert</div>
+                <div class="skill-tag">RAG Architectures</div>
+                <div class="skill-tag">Multi-Model LLM Integration</div>
+                <div class="skill-tag">Gemini, OpenAI, Anthropic, Ollama</div>
+                <div class="skill-tag">Git / GitHub</div>
+                <div class="skill-tag">Python (AI Scripts)</div>
+                <div class="skill-tag">JavaScript ES6+</div>
+                <div class="skill-tag">Node.js / Express</div>
+                <div class="skill-tag">Java</div>
+                <div class="skill-tag">PHP / SQL</div>
+                <div class="skill-tag">Firebase / NoSQL</div>
+                <div class="skill-tag">LLM Orchestration</div>
+                <div class="skill-tag">API Integration</div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Automation Stack</h3>
+                <div class="skill-tag">SMM Automation</div>
+                <div class="skill-tag">Facebook Graph API</div>
+                <div class="skill-tag">Instagram Automation</div>
+                <div class="skill-tag">Threads Sync</div>
+                <div class="skill-tag">Daily Blog Auto-Gen</div>
+                <div class="skill-tag">CRM Integration</div>
+                <div class="skill-tag">Auto-Quoting Systems</div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Idiomas</h3>
+                <div class="lang-item"><strong>Español:</strong> Nativo</div>
+                <div class="lang-item"><strong>Inglés:</strong> B2 Certificado</div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Expertise Industrial</h3>
+                <div class="lang-item">• Disciplina Operacional (SOPs)</div>
+                <div class="lang-item">• Sistemas Críticos (Zero Error)</div>
+                <div class="lang-item">• Teórico ATPL(A) Aviación</div>
+                <div class="lang-item">• CRM & Toma de decisiones</div>
+                <div class="lang-item">• PLC Systems (GE/Allen Bradley)</div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+            <header>
+                <h1>Eudaldo Cal Saul</h1>
+                <div class="header-subtitle">Full-Stack Developer | AI & Automation Architect</div>
+            </header>
+
+            <div class="profile-summary">
+                Ingeniero híbrido con +15 años de experiencia en entornos industriales de alta criticidad (Veolia). Especialista en <strong>Arquitecturas de IA y Automatización desatendida</strong>. Fundador de <strong>D4Lab</strong> y <strong>TesIA.es</strong>, donde diseño soluciones que transforman procesos complejos en flujos de ingresos automáticos mediante RAG, orquestación de LLMs y automatización omnicanal.
+            </div>
+
+            <section class="section">
+                <h2 class="section-title">Experiencia en Innovación & IA</h2>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Founder & Lead Automation Engineer</span>
+                        <span class="job-date">2024 - Actual</span>
+                    </div>
+                    <div class="job-company">D4Lab | Estudio de IA & Software</div>
+                    <ul class="job-list">
+                        <li><strong>Arquitecturas de Automatización con n8n:</strong> Diseño y despliegue de flujos complejos con lógica de estados asíncronos, integración de bases de datos (Firestore/SQL) y orquestación de múltiples modelos de IA.</li>
+                        <li><strong>Ecosistemas de Contenido Autónomo:</strong> Pipelines de generación y publicación desatendida en entornos Cloud (Vercel/Firebase) con distribución omnicanal sincronizada.</li>
+                        <li><strong>Sistemas de Presupuestación IA:</strong> Orquestación de agentes conversacionales para la cualificación técnica de leads y automatización de lógica financiera/logística.</li>
+                        <li><strong>TesIA.es (Arquitectura RAG):</strong> Implementación de sistemas de recuperación de información (RAG) para entornos educativos, optimizando la precisión de las respuestas mediante bases de conocimiento vectoriales.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Especialista en Sistemas y Datos Críticos</span>
+                        <span class="job-date">2007 - 2024</span>
+                    </div>
+                    <div class="job-company">Ionics Ibérica SLU (Veolia)</div>
+                    <ul class="job-list">
+                        <li><strong>Disciplina Operacional:</strong> Supervisión de infraestructuras críticas (Desalación) bajo estricta tolerancia cero a errores y seguimiento de protocolos industriales.</li>
+                        <li><strong>Automatización SCADA/PLC:</strong> Operación avanzada y resolución de fallos en sistemas de control industrial (GE Fanuc / Allen Bradley).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="section">
+                <h2 class="section-title">Formación Académica</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Grado Superior Desarrollo Aplicaciones Web (DAW)</span>
+                        <span class="job-date">2024 - Actual</span>
+                    </div>
+                    <div class="job-company">CIFP Cesar Manrique | Excelencia Académica</div>
+                    <ul class="job-list">
+                        <li><strong>Excelencia Académica:</strong> Nota Media de <strong>10</strong> con <strong>7 Matrículas/10s</strong> en asignaturas clave (Bases de Datos, Despliegue, Entornos de Desarrollo).</li>
+                        <li><strong>Menciones de Honor</strong> en Programación (Java) y Lenguajes de Marcas.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Grado Ingeniería Informática (186 ECTS Superados)</span>
+                        <span class="job-date">Formación</span>
+                    </div>
+                    <div class="job-company">UNED | Foco en Ingeniería del Software & Algoritmia</div>
+                    <ul class="job-list">
+                        <li><strong>Matrícula de Honor (10)</strong> en Fundamentos de Programación y <strong>Sobresaliente (10)</strong> en Estrategias de Programación y Estructuras de Datos.</li>
+                        <li>Sólida formación en <strong>Sistemas Distribuidos, Seguridad y Gestión de Empresas</strong>.</li>
+                        <li>Base profunda en algoritmia y lógica funcional aplicada.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Aviación Comercial (ATPL/CPL/IR/MEP)</span>
+                        <span class="job-date">En curso</span>
+                    </div>
+                    <div class="job-company">CANAVIA / BlueTeam Flight School</div>
+                    <ul class="job-list">
+                        <li>Gestión de recursos de cabina (CRM), toma de decisiones bajo presión y rigor operativo en entornos de alta exigencia.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

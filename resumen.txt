@@ -1,0 +1,69 @@
+# Dosier Profesional: Eudaldo Cal Saul
+## Arquitecto de Automatización, IA & Desarrollador Full-Stack
+
+### Introducción: El Ingeniero Híbrido
+Mi trayectoria se define por una transición única: desde la gestión de **infraestructuras industriales críticas** durante 16 años hacia la **vanguardia de la Inteligencia Artificial y la Automatización**. Mi valor diferencial reside en la combinación de una disciplina operacional de "Error Cero" (propia del sector industrial y la aviación) con una capacidad técnica sobresaliente en el desarrollo de software moderno.
+
+---
+
+### 1. La Fundación Industrial (2007 - 2024)
+**Compañía:** Ionics Ibérica SLU (Veolia Water Technologies)
+**Rol:** Especialista en Sistemas y Datos Críticos
+
+Durante casi dos décadas, fui responsable de la supervisión operativa en plantas desaladoras, entornos donde el fallo de un sistema puede tener consecuencias masivas.
+*   **Gestión de Sistemas Críticos:** Operación bajo sistemas SCADA y programación/resolución de fallos en PLCs (General Electric / Allen Bradley).
+*   **Modelado de Datos:** Análisis de datos operativos para la optimización de procesos de filtración y ósmosis inversa, traduciendo variables físicas en eficiencia técnica.
+*   **Mantenimiento de Infraestructura:** Administración de redes industriales y hardware en entornos de alta exigencia.
+*   **Lección Aprendida:** En el software, un bug es una molestia; en la industria, un error es una catástrofe. Aplico esta mentalidad de **rigor extremo** a cada línea de código que escribo.
+
+---
+
+### 2. Excelencia Académica: El Dominio de la Lógica
+Mi formación no es solo una transición de carrera, es una demostración de rendimiento excepcional.
+
+#### Grado Superior en Desarrollo de Aplicaciones Web (DAW)
+*   **Rendimiento:** Nota media de **10**.
+*   **Reconocimientos:** **Menciones de Honor** en Programación (Java) y Lenguajes de Marcas.
+*   **Competencias:** Dominio avanzado de PHP, Python y JavaScript, con un enfoque en la arquitectura de bases de datos y la experiencia de usuario.
+
+#### Grado en Ingeniería Informática (UNED)
+*   **Hitos:** **Matrícula de Honor** en Fundamentos de Programación (Modula-2) y **Sobresaliente (10)** en Estrategias de Programación y Estructuras de Datos.
+*   **Profundidad Técnica:** 186 ECTS superados con un fuerte enfoque en Algoritmia, Sistemas Distribuidos, Seguridad y Gestión de Empresas. Mi base técnica incluye lenguajes de bajo nivel y funcionales como **C, Haskell y VHDL**, lo que me permite optimizar aplicaciones desde su arquitectura base.
+
+---
+
+### 3. Innovación en IA y Automatización (2024 - Actualidad)
+Como fundador de **D4Lab** y creador de **TesIA.es**, he pasado de la teoría a la creación de productos que generan valor real mediante IA.
+
+#### Arquitecturas n8n de Alto Nivel
+He diseñado y desplegado ecosistemas de automatización que van más allá de simples tareas:
+*   **Gestión de Estados Asíncronos:** Uso de **Firestore** y bases de datos SQL para mantener la persistencia en flujos de automatización complejos.
+*   **Orquestación Multimodelo:** Integración y conmutación inteligente entre modelos de LLM (Gemini, OpenAI, Anthropic, Ollama) según la complejidad de la tarea.
+*   **Pipelines de CI/CD Automáticos:** Flujos que generan contenido (blogs/RRSS) y lo despliegan automáticamente en **Vercel** y **Firebase** sin intervención humana.
+
+#### TesIA.es: Educación Potenciada por IA
+*   **Implementación de RAG (Retrieval-Augmented Generation):** Desarrollo de un sistema de tutoría socrática para opositores que utiliza bases de conocimiento vectoriales para garantizar respuestas precisas basadas en normativa técnica real.
+
+#### Sistemas de Presupuestación Autónoma
+*   Desarrollo de agentes capaces de cualificar leads, realizar cálculos financieros complejos (desplazamientos, horas hombre, márgenes) y cerrar ciclos de venta mediante el envío automático de propuestas en PDF.
+
+---
+
+### 4. La Disciplina del Aire: Aviación y CRM
+Mi formación como piloto comercial (ATPL/CPL en curso) aporta una capa adicional de valor a mi perfil como desarrollador:
+*   **CRM (Crew Resource Management):** Capacidad para gestionar recursos, delegar y tomar decisiones críticas bajo presión.
+*   **SOPs (Standard Operating Procedures):** Hábito de trabajar bajo protocolos estrictos y listas de verificación, garantizando la calidad y la repetibilidad en los procesos de desarrollo.
+
+---
+
+### 5. Stack Tecnológico Principal
+*   **Lenguajes:** Python (AI/Scripts), JavaScript/TypeScript (Node.js/React), Java, PHP.
+*   **IA:** RAG, Prompt Engineering, LLM Orchestration, Vector Databases, Local LLMs (Ollama).
+*   **Automatización:** n8n Expert, APIs REST/Graph, Webhooks.
+*   **Cloud & DevOps:** Firebase, Vercel, Google Cloud, Docker, Git/GitHub.
+*   **Industrial:** SCADA, PLC (GE/AB), Networking Industrial.
+
+---
+
+### Conclusión
+Soy un desarrollador que entiende la máquina desde el bit hasta el proceso industrial. Mi objetivo es ayudar a las empresas a escalar su eficiencia mediante la **automatización inteligente**, aportando la fiabilidad de un ingeniero industrial y la agilidad de un desarrollador de software de élite.
