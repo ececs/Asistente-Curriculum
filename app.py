@@ -73,12 +73,16 @@ def evaluar_respuesta(respuesta_chat, mensaje, historial) -> Evaluacion:
             {"role": "system", "content": prompt_sistema_evaluador},
             {"role": "user", "content": generar_prompt_usuario_evaluador(respuesta_chat, mensaje, historial)}
         ]
-        completion = gemini.chat.completions.create(
-            model="gemini-1.5-flash", 
+        completion = gemini.chat.completions.parse(
+            model="gemini-2.5-flash-lite", 
             messages=mensajes, 
             response_format=Evaluacion
         )
-        return completion.choices[0].message.parsed
+        print(f"Evaluando respuesta con {completion.model}...", flush=True)
+        evaluacion = completion.choices[0].message.parsed
+        status = "ACEPTADA" if evaluacion.es_aceptable else "RECHAZADA"
+        print(f"Resultado de Evaluación: {status}", flush=True)
+        return evaluacion
     except Exception as e:
         print(f"Error en evaluación: {e}")
         # En caso de error en el evaluador, dejamos pasar la respuesta original por seguridad
@@ -95,6 +99,7 @@ def reejecutar_con_correccion(respuesta_fallida, mensaje, historial, retroalimen
     return nueva_respuesta.choices[0].message.content
 
 def chatear(mensaje, historial):
+    print(f"\n--- Nueva pregunta recibida: {mensaje[:50]}... ---", flush=True)
     # Generar respuesta inicial
     mensajes = [{"role": "system", "content": prompt_sistema}] + historial + [{"role": "user", "content": mensaje}]
     respuesta = client_openai.chat.completions.create(model="gpt-4o-mini", messages=mensajes)
@@ -104,14 +109,25 @@ def chatear(mensaje, historial):
     evaluacion = evaluar_respuesta(respuesta_chat, mensaje, historial)
 
     if evaluacion.es_aceptable:
-        print(">>> Respuesta aceptada.")
+        print(">>> Respuesta aceptada.", flush=True)
         return respuesta_chat
     else:
-        print(f">>> Respuesta rechazada. Motivo: {evaluacion.retroalimentacion}")
+        print(f">>> Respuesta rechazada. Motivo: {evaluacion.retroalimentacion}", flush=True)
         # Reintentar una vez con la corrección
         respuesta_corregida = reejecutar_con_correccion(respuesta_chat, mensaje, historial, evaluacion.retroalimentacion)
         return respuesta_corregida
 
 # 4. Lanzamiento de la Interfaz
-print("Iniciando Interfaz de Chat...")
-gr.ChatInterface(chatear).launch()
+print("Iniciando Interfaz de Chat...", flush=True)
+demo = gr.ChatInterface(chatear)
+demo.launch(prevent_thread_lock=True)
+
+print("\n>>> Interfaz iniciada correctamente.")
+print(">>> Escribe 'salir' y presiona Enter en esta consola para cerrar el programa.\n", flush=True)
+
+while True:
+    comando = input().strip().lower()
+    if comando == "salir":
+        print("Cerrando el asistente...", flush=True)
+        demo.close()
+        break
